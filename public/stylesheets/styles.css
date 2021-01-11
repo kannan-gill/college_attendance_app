@@ -1,0 +1,131 @@
+body {
+    background: #0A8204;
+}
+
+a {
+    color: white;
+}
+
+.container{
+    color:black;
+}
+
+#pq{
+    color:white;
+}
+
+#tu{
+    color:black;
+}
+
+
+.navbar-default {
+    margin-bottom: 0;
+    margin-top: 0;
+    border-radius: 0;
+    padding: 15px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #0A8204;
+    font-size: 1.2em;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 2em;
+    color: #0A8204;
+}
+
+header {
+    height: 20%;
+}
+
+.jumbotron {
+    background: url(pecheli.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    height: 20%;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron div {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background: rgba(10, 130, 4, .6);
+}
+
+.row.text-center {
+    margin-top: 5%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    padding: 0;
+    padding-bottom: 5px;
+    border: none;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 
+                0 4px 25px 0px rgba(0, 0, 0, 0.12), 
+                0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.gallery img {
+    width: auto;
+}
+
+.form {
+    text-align: center;
+    width: 50%;
+}
+
+.form-control {
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+section {
+    background: white;
+    margin-top: 0;
+}
+
+section h1 {
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 5%;
+    padding: 15px;
+}
+
+#footer a {
+    color: white;
+}
+
+#delete-form {
+    display: inline;
+}
+
+@media screen and (min-width: 996px) {
+    .gallery img {
+        height: 200px;
+        width: auto;
+    }
+}

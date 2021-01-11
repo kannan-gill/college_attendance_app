@@ -1,0 +1,42 @@
+<%-include ("partials/header") %>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">SID</th>
+      <th scope="col">Attendance</th>
+    </tr>
+  </thead>
+  <tbody>
+      <%var t=1%>
+      <%students.forEach(function(student){%>
+      <tr>
+           <th scope="row"><%=t%></th>
+           <td><a href="/attendance/<%=student._id%>/<%=sub%>"><%=student.Name%></td>
+           <td><%=student.SID%></td>
+           <%if(sub=="COA"){%>
+           <td><%=student.COA%></td>
+           <%}%>
+           <%if(sub=="ES"){%>
+           <td><%=student.ES%></td>
+           <%}%>
+           <%if(sub=="AC"){%>
+           <td><%=student.AC%></td>
+           <%}%>
+           <%if(sub=="WC"){%>
+           <td><%=student.WC%></td>
+           <%}%>
+        </tr>
+        <%t++%>
+      <%});%>
+      
+  </tbody>
+</table>
+
+
+   
+
+
+<%-include ("partials/footer") %>

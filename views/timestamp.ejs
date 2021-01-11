@@ -1,0 +1,29 @@
+<%-include ("partials/header") %>
+
+<h1>Log of <%=student[0].Name%></h1>
+<ul>
+    <%if (sub=="COA"){%>
+    <%student[0].COAtime.forEach(function(s){%>
+    <li><%=s%></li>
+    <%});%>
+    <%}%>
+     <%if (sub=="ES"){%>
+    <%student[0].EStime.forEach(function(s){%>
+    <li><%=s%></li>
+    <%});%>
+    <%}%>
+     <%if (sub=="AC"){%>
+    <%student[0].ACtime.forEach(function(s){%>
+    <li><%=s%></li>
+    <%});%>
+    <%}%>
+     <%if (sub=="WC"){%>
+    <%student[0].WCtime.forEach(function(s){%>
+    <li><%=s%></li>
+    <%});%>
+    <%}%>
+    
+   
+</ul>
+
+<%-include ("partials/footer") %>
